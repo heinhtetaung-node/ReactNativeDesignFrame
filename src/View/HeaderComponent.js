@@ -7,12 +7,12 @@ import {
 export default class HeaderComponent extends Component {
     render() {
         return (<View style={{
-            height: 90,
+            height: 50,
             flexDirection: 'row',
             justifyContent: 'flex-start',
             alignItems: 'center'
         }}>
-            <TouchableHighlight style={{ position:'absolute', zIndex:9999, left: 10, top: 30 }}
+            <TouchableHighlight style={{ position:'absolute', zIndex:9999, left: 10, top: 10 }}
                 onPress={() => {
                     const { navigate } = this.props.navigation;
                     navigate('DrawerOpen');
