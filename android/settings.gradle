@@ -1,0 +1,3 @@
+rootProject.name = 'DesignFrame'
+
+include ':app'
