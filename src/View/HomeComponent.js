@@ -22,7 +22,7 @@ export default class HomeComponent extends Component {
             flex: 1,
             flexDirection: 'column',
         }}>      
-            <HeaderComponent {...this.props} />      
+            <HeaderComponent {...this.props} pagetitle="Home" />      
             <View style={{
                 flex: 1,
                 backgroundColor: backgroundColor,

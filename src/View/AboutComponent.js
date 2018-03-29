@@ -24,7 +24,7 @@ export default class AboutComponent extends Component {
             flex: 1,
             flexDirection: 'column',
         }}>
-            <HeaderComponent {...this.props} />
+            <HeaderComponent {...this.props} pagetitle="About" />
             <View style={{
                 flex: 1,
                 backgroundColor: backgroundColor,

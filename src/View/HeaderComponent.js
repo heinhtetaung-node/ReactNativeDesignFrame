@@ -12,16 +12,17 @@ export default class HeaderComponent extends Component {
             justifyContent: 'flex-start',
             alignItems: 'center'
         }}>
-            <TouchableHighlight style={{ marginLeft: 10, marginTop: 20 }}
+            <TouchableHighlight style={{ position:'absolute', zIndex:9999, left: 10, top: 30 }}
                 onPress={() => {
                     const { navigate } = this.props.navigation;
                     navigate('DrawerOpen');
                 }}>
                 <Image
-                    style={{ width: 32, height: 32 }}
+                    style={{ width: 32, height: 30, zIndex:9998 }}
                     source={require('../../icons/menu-icon.png')}
                 />
             </TouchableHighlight>
+            <Text style={{ position:'absolute', zIndex:1, left:0, right:0, textAlign: 'center', fontSize:23, fontWeight:'bold' }}>{ this.props.pagetitle }</Text>
         </View>);
     }
 }
